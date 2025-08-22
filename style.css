@@ -642,9 +642,18 @@ section {
         font-size: 1.5rem;
     }
 
+    .home-content .name {
+    color: white;
+    font-weight: bold;
+    position: relative;
+    font-size: 2rem;
+    
+}
+
+
     .profile-pic {
-        width: 150px;
-        height: 150px;
+        width: 250px;
+        height: 250px;
         font-size: 1rem;
     }
     
