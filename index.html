@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prateek Jangir - DevFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Portfolio</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" >Home</a></li>
+                <li class="nav-item"><a href="#about" >About</a></li>
+                <li class="nav-item"><a href="#project" >Project</a></li>
+                <li class="nav-item"><a href="#portfolio" >Certificates</a></li>
+                <li class="nav-item"><a href="#contact" >Contact</a></li>
+                <li class="nav-item"><a target="_blank" href="https://drive.google.com/file/d/1FC2QQdXFgsPs2jx0c1V_2JYTXn0HXLww/view?usp=sharing" >Resume</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>
+                <span class="name">PRATEEK JANGIR</span><br>
+                <span class="iam-text-small"><span class="blue-text">Web Developer</span></span>
+            </h1>
+        </div>
+        <div class="profile-pic">
+            <img src="images/Prateek.png" alt="prateek image">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+         <div class="about-content">
+        <h2 style="visibility: hidden;">About Me</h2>
+        <div class="about-grid">
+            <div class="about-section">
+                <h3>About Myself</h3>
+                 <p>
+                    My name is <strong>Prateek Jangir</strong>, and I am a passionate Web Developer. 
+                    I love building creative, user-friendly websites and applications that solve real-world problems. 
+                </p>
+                <p> 
+                    I enjoy both frontend and backend development. I am constantly improving my problem-solving skills 
+                    and exploring new technologies to grow as a developer.
+                </p>
+                <p>
+                    Apart from coding, I enjoy playing chess, photography, and listening to music, 
+                    which help me stay focused and creative. My ultimate goal is to become a skilled 
+                    <strong>Software Engineer</strong> and contribute to impactful projects.
+                    </p>
+            </div>
+            <div class="about-section">
+                <h3>Skills</h3>
+                <div class="skills-grid">
+                <div class="skill-item">HTML</div>
+                <div class="skill-item">CSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">C</div>
+                <div class="skill-item">CPP</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">SQL</div>
+                <div class="skill-item">Linux</div>
+                <div class="skill-item">Git</div>
+                <div class="skill-item">Node.js</div>
+                <div class="skill-item">Express.js</div>
+                <div class="skill-item">APIs</div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+     <!-- Porject Section -->
+   <section id="project" class="project">
+  <div class="project-content">
+    <h2>My Project ( ToDo List )</h2>
+
+    <div class="project-box">
+<h3>User Authentication</h3>
+  <ul class="project-list">
+    <li>Implemented user registration and login with email and password, storing credentials securely in a PostgreSQL database.</li>
+    <li>Integrated Google OAuth 2.0 using passport-google-oauth2 for seamless single sign-on with Google accounts.</li>
+    <li>Utilized passport and passport-local modules for authentication, verifying user passwords against hashed values.</li>
+  </ul>
+
+  <h3>Security:</h3>
+  <ul class="project-list">
+    <li>Employed bcrypt to encrypt and store user passwords in hashed format in the database, ensuring data protection.</li>
+    <li>Configured express-session for session management with secure cookies, maintaining user state across requests.</li>
+  </ul>
+
+  <h3>Task Management:</h3>
+  <ul class="project-list">
+    <li>Enabled users to create, edit, and delete tasks, with CRUD operations stored in a PostgreSQL database.</li>
+    <li>Added conditional task deletion, allowing users to remove only completed tasks, enhancing usability.</li>
+    <li>Displayed tasks in a responsive table with edit and delete options, improving user interaction.</li>
+  </ul>
+
+  <h3>Backend Development:</h3>
+  <ul class="project-list">
+    <li>Built an API using Node.js and Express.js, handling routes for authentication and task management.</li>
+    <li>Connected to a PostgreSQL database using the <code>pg</code> module, performing secure parameterized queries to prevent SQL injection.</li>
+  </ul>
+
+  <h3>Frontend Development:</h3>
+  <ul class="project-list">
+    <li>Developed dynamic views with EJS templating, incorporating partials for reusable header and footer components.</li>
+    <li>Designed a responsive UI with Bootstrap 5, enhanced with custom CSS for gradients, hover effects, and mobile optimization.</li>
+    <li>Styled error messages with custom classes, providing a polished user experience without relying on Bootstrap alerts.</li>
+  </ul>
+
+  <h3>Technologies & Tools:</h3>
+  <ul class="project-list">
+    <li><strong>Backend:</strong> Node.js, Express.js, PostgreSQL, Passport.js, bcrypt, express-session.</li>
+    <li><strong>Frontend:</strong> EJS, Bootstrap 5, custom CSS with media queries.</li>
+    <li><strong>Development:</strong> ES6 modules, Nodemon for auto-reloading, dotenv for environment variables.</li>
+  </ul>
+
+  <div class="project-buttons">
+    <a href="https://github.com/prateek4576/mytodoapp" target="_blank" class="project-btn">View on GitHub</a>
+    <!-- <a href="https://your-live-demo.com" target="_blank" class="project-btn">Live Demo</a> -->
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+    <h2>Certificates</h2>
+    <div class="certificates-grid">
+        <img src="images/reactjs.png" alt="Certificate 1" class="cert-img" onclick="openModal(this.src)" >
+        <img src="images/Web.png"    alt="Certificate 2" class="cert-img" onclick="openModal(this.src)" >
+        <img src="images/css.jpg"    alt="Certificate 3" class="cert-img" onclick="openModal(this.src)" >
+        <img src="images/Linux.png"  alt="Certificate 4" class="cert-img" onclick="openModal(this.src)" >
+    </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="https://formspree.io/f/manbvbqr" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email">
+            </div>
+        
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Type your message here"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="social-links">
+        <a href="https://github.com/prateek4576" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/prateek-jangir-software-developer/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://x.com/jangir_pra39247" target="_blank"><i class="fab fa-twitter"></i></a>
+         <a href="https://www.instagram.com/prateekjangir_57" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:prateekjangir4576@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>&copy; 2025 Prateek Jangir. All rights reserved.</p>
+    </footer>
+
+
+<script src="script.js"></script>
+
+<!-- Image Modal -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+</body>
+</html>
